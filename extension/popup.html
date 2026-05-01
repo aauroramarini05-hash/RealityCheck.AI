@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RealityCheck AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <h1>RealityCheck AI</h1>
+        <p>Validate before you create.</p>
+      </header>
+
+      <form id="analyze-form" class="form">
+        <textarea id="idea" minlength="10" maxlength="500" required placeholder="Your video idea..."></textarea>
+        <button id="analyze-btn" type="submit">Analyze</button>
+      </form>
+
+      <section id="result" class="result hidden" aria-live="polite">
+        <div class="result-top">
+          <p class="label">Score</p>
+          <p id="score" class="score">--</p>
+        </div>
+        <div class="block">
+          <p class="label">Hook</p>
+          <p id="hook"></p>
+        </div>
+        <div class="block">
+          <p class="label">Feedback</p>
+          <p id="feedback"></p>
+        </div>
+      </section>
+
+      <p id="error" class="error hidden"></p>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
