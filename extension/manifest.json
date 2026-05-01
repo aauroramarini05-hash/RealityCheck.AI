@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "RealityCheck AI",
+  "version": "1.1.0",
+  "description": "Analyze YouTube ideas with instant RealityCheck scoring.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://YOUR_DEPLOYED_URL/*"]
+}
